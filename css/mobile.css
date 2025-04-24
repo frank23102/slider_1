@@ -1,0 +1,69 @@
+/* =============================================================================
+   MEDIA QUERIES
+   ============================================================================= */
+
+/* Reduce header padding on medium-large screens */
+@media (max-width: 1300px) {
+  header {
+    padding: 20px 4%;    /* Narrow side padding for smaller viewports */
+  }
+}
+
+/* Adjust logo, nav spacing, and container text on smaller desktops/tablets */
+@media (max-width: 1050px) {
+  .logo {
+    font-size: 25px;     /* Slightly smaller logo text */
+  }
+  .logo img {
+    width: 40px;         /* Smaller logo icon */
+    height: auto;
+  }
+  .navlist a {
+    margin: 0 25px;      /* Reduce spacing between links */
+  }
+  .btn {
+    padding: 11px 23px;  /* Smaller button padding */
+  }
+  .container h1 {
+    font-size: 3.2rem;   /* Smaller heading text */
+  }
+}
+
+/* Mobile nav behaviour: show hamburger, full-screen menu */
+@media (max-width: 940px) {
+  #menu-icon {
+    display: block;      /* Show the hamburger icon */
+  }
+  .navlist {
+    position: absolute;  /* Overlay full screen */
+    top: 0;
+    right: -100%;        /* Hidden off-screen by default */
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(32px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;  /* Space below header */
+    transition: all 0.7s ease;
+    align-items: center;
+  }
+  .navlist a {
+    display: block;
+    margin: 0 0 50px;    /* Vertical spacing between mobile links */
+    font-size: 1.7rem;   /* Larger tappable text */
+  }
+  .navlist.open {
+    right: 0;            /* Slide in when “open” class applied */
+  }
+}
+
+/* Extra-small screens: shrink hero heading */
+@media (max-width: 450px) {
+  .container h1 {
+    font-size: 2.5rem;   /* Ensure heading fits on narrow phones */
+  }
+}
+
+  
+  
+

@@ -1,0 +1,137 @@
+/* =============================================================================
+   IMPORTS
+   ============================================================================= */
+/* Google Fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* =============================================================================
+   RESET & GLOBAL STYLES
+   ============================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;   /* Remove underlines from links */
+  list-style: none;        /* Remove bullets from lists */
+  font-family: "Inter", sans-serif;  /* Base font for all text */
+}
+
+/* =============================================================================
+   BODY
+   ============================================================================= */
+body {
+  background-color: #133c18;  /* Dark green background */
+  color: #fff;                /* White text for contrast */
+}
+
+/* =============================================================================
+   HEADER / NAVIGATION BAR
+   ============================================================================= */
+header {
+  position: fixed;            /* Stick to top of viewport */
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 35px 8%;           /* Vertical and horizontal spacing */
+  display: flex;
+  align-items: center;        /* Vertically center items */
+  justify-content: space-between; /* Space between logo and nav */
+  z-index: 1000;              /* Above other content */
+  transition: all 0.5s ease;  /* Smooth transition for interactive states */
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* Logo image sizing */
+.logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 8px;         /* Space between image and text */
+}
+
+/* =============================================================================
+   NAVIGATION LINKS
+   ============================================================================= */
+/* Container for nav links */
+.navlist {
+  display: flex;
+}
+
+/* Individual link styling */
+.navlist a {
+  margin: 0 35px;            /* Horizontal spacing between links */
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on nav links */
+.navlist a:hover {
+  text-shadow:
+    3px 3px 20px #066400,    /* Green glow */
+    -2px 1px 30px #fff;      /* White glow */
+}
+
+/* =============================================================================
+   RIGHT-SIDE NAV CONTROLS
+   ============================================================================= */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Primary button styling */
+.btn {
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  margin-right: 12px;
+  transition: all 0.6s ease;
+}
+
+/* Hover state for primary button */
+.btn:hover {
+  background: #066400;       /* Match link hover green */
+  color: #fff;
+  box-shadow: 0 0 20px #066400;
+  transform: scale(1.1);     /* Slight grow on hover */
+}
+
+/* Hamburger menu icon (hidden on desktop) */
+#menu-icon {
+  display: none;             /* Show via media query on mobile */
+  font-size: 34px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;            /* Above other header elements */
+}
+
+/* =============================================================================
+   PAGE-CONTAINER
+   ============================================================================= */
+/* Full-screen hero / container */
+.container {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/bg.png) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading inside .container */
+.container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
