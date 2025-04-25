@@ -57,6 +57,58 @@
   }
 }
 
+@media (max-width: 940px) {
+  /* make the dropdown part of the document flow */
+  .has-dropdown .dropdown-menu {
+    position: static;       /* no more absolute overlay */
+    transform: none;        /* reset translateY */
+    opacity: 0;             /* hide by default */
+    visibility: hidden;
+    max-height: 0;          /* collapse height */
+    overflow: hidden;       /* hide items when closed */
+    transition: 
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+    margin-top: 1rem;       /* gap between parent and children */
+  }
+
+  /* when open, expand and push everything below downward */
+  .has-dropdown .dropdown-menu.open {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px;      /* big enough to show all 4 items */
+  }
+  /* Shrink padding on each main nav link */
+  .navlist > li > a {
+    padding: 8px 16px;     /* e.g. top/bottom 8px, left/right 16px */
+    font-size: 1.4rem;     /* slightly smaller text */
+  }
+  .navlist li.has-dropdown > a {
+    display: block;           /* ensure it fills its parent <li> */
+    position: relative;       /* so the icon can be positioned absolutely */
+    text-align: center;       /* center the inline text */
+    padding: 0 2rem;          /* horizontal padding for breathing room */
+  }
+
+  .navlist li.has-dropdown > a .bx-chevron-down {
+    position: absolute;       /* remove it from normal flow */
+    right: 1rem;              /* sit 1rem from the right edge */
+    top: 50%;                 /* vertically centered in the link */
+    transform: translateY(-50%);
+    pointer-events: none;     /* clicks still hit the <a> */
+  }
+
+
+  /* And the dropdown items (once they’re part of the flow) */
+  .has-dropdown .dropdown-menu li a {
+    padding: 8px 12px;
+    font-size: 1.3rem;
+  }
+}
+
+
+
 /* Extra-small screens: shrink hero heading */
 @media (max-width: 450px) {
   .container h1 {

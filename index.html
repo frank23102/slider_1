@@ -42,18 +42,30 @@
   <header>
     <!-- Logo and site title -->
     <a href="#" class="logo">
-      <img src="img/logo.png" alt="Site Logo" />
-      Navbar
+      <img src="assets/image/transparent_logo.png" alt="Site Logo" />
     </a>
 
-    <!-- Primary navigation links -->
     <ul class="navlist">
       <li><a href="#">Inicio</a></li>
       <li><a href="#">Info</a></li>
-      <li><a href="#">Programas</a></li>
+      <!-- Add this dropdown wrapper -->
+      <li class="has-dropdown">
+        <a href="#">
+          Programas <i class="bx bx-chevron-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#programa1">Programa 1</a></li>
+          <li><a href="#programa2">Programa 2</a></li>
+          <li><a href="#programa3">Programa 3</a></li>
+          <li><a href="#programa4">Programa 4</a></li>
+        </ul>
+      </li>
       <li><a href="#">Casa de Retiro</a></li>
       <li><a href="#">Contactar</a></li>
     </ul>
+
+    <!-- Primary navigation links -->
+     
 
     <!-- Right-side controls: booking button + mobile menu icon -->
     <div class="nav-right">
@@ -64,13 +76,6 @@
   </header>
 
   <!-- ============================
-       MAIN CONTENT WRAPPER
-       ============================ -->
-  <section class="container">
-    <h1>Flexbox Navbar</h1>
-  </section>
-
-  <!-- ============================
        CAROUSEL COMPONENT
        ============================ -->
   <div class="carousel">
@@ -79,7 +84,7 @@
       <!-- Each slide item -->
       <div class="item">
         <!-- Slide image -->
-        <img src="assets/image/img1.jpg" alt="Slide 1" />
+        <img src="assets/image/img1.jpeg" alt="Slide 1" />
         <!-- Overlay content for slide -->
         <div class="content">
           <div class="author">LUNDEV</div>
@@ -103,7 +108,7 @@
 
       <!-- Repeat .item for each additional slide -->
       <div class="item">
-        <img src="assets/image/img2.jpg" alt="Slide 2" />
+        <img src="assets/image/img2.jpeg" alt="Slide 2" />
         <div class="content">
           <div class="author">LUNDEV</div>
           <div class="title">DESIGN SLIDER</div>
@@ -121,7 +126,7 @@
 
       <!-- Slide 3 -->
       <div class="item">
-        <img src="assets/image/img3.jpg" alt="Slide 3" />
+        <img src="assets/image/img3.jpeg" alt="Slide 3" />
         <div class="content">
           <div class="author">LUNDEV</div>
           <div class="title">DESIGN SLIDER</div>
@@ -138,7 +143,7 @@
 
       <!-- Slide 4 -->
       <div class="item">
-        <img src="assets/image/img4.jpg" alt="Slide 4" />
+        <img src="assets/image/img4.jpeg" alt="Slide 4" />
         <div class="content">
           <div class="author">LUNDEV</div>
           <div class="title">DESIGN SLIDER</div>
@@ -160,7 +165,7 @@
     <div class="thumbnail">
       <!-- Thumbnail item -->
       <div class="item">
-        <img src="assets/image/img1.jpg" alt="Thumbnail 1" />
+        <img src="assets/image/img1.jpeg" alt="Thumbnail 1" />
         <div class="content">
           <div class="title">Name Slider</div>
           <div class="description">Description</div>
@@ -168,21 +173,21 @@
       </div>
       <!-- Repeat for other thumbnails -->
       <div class="item">
-        <img src="assets/image/img2.jpg" alt="Thumbnail 2" />
+        <img src="assets/image/img2.jpeg" alt="Thumbnail 2" />
         <div class="content">
           <div class="title">Name Slider</div>
           <div class="description">Description</div>
         </div>
       </div>
       <div class="item">
-        <img src="assets/image/img3.jpg" alt="Thumbnail 3" />
+        <img src="assets/image/img3.jpeg" alt="Thumbnail 3" />
         <div class="content">
           <div class="title">Name Slider</div>
           <div class="description">Description</div>
         </div>
       </div>
       <div class="item">
-        <img src="assets/image/img4.jpg" alt="Thumbnail 4" />
+        <img src="assets/image/img4.jpeg" alt="Thumbnail 4" />
         <div class="content">
           <div class="title">Name Slider</div>
           <div class="description">Description</div>
