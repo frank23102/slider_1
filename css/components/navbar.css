@@ -1,4 +1,3 @@
-
 /* =============================================================================
    RESET & GLOBAL STYLES
    ============================================================================= */
@@ -14,25 +13,47 @@
    BODY
    ============================================================================= */
 body {
-  background-color: #133c18;  /* Dark green background */
   color: #fff;                /* White text for contrast */
 }
 
 /* =============================================================================
    HEADER / NAVIGATION BAR
    ============================================================================= */
-header {
-  position: fixed;            /* Stick to top of viewport */
-  top: 0;
-  right: 0;
-  width: 100%;
-  padding: 35px 8%;           /* Vertical and horizontal spacing */
-  display: flex;
-  align-items: center;        /* Vertically center items */
-  justify-content: space-between; /* Space between logo and nav */
-  z-index: 1000;              /* Above other content */
-  transition: all 0.5s ease;  /* Smooth transition for interactive states */
-}
+   header {
+    position: fixed;            /* Stick to top of viewport */
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 8%;           /* Vertical and horizontal spacing */
+    display: flex;
+    align-items: center;        /* Vertically center items */
+    justify-content: space-between; /* Space between logo and nav */
+    z-index: 1000;              /* Above other content */
+    transition: all 0.5s ease;  /* Smooth transition for interactive states */
+  
+    /* =============================
+       Dual diagonal fades:
+         • 120° gradient on left
+         •  45° gradient on right
+         • solid fallback in middle
+       ============================= */
+    background:
+      /* left fade */
+      linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.7) 43%,
+        rgba(255, 255, 255,   0) 23%
+      )
+      left top / 43% 100% no-repeat,
+  
+      /* right fade */
+      linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0) 43%,
+        rgba(255, 255, 255,   0.7) 23%
+      )
+      right top /39% 100% no-repeat;
+  }
 
 /* Logo styling */
 .logo {
@@ -60,7 +81,7 @@ header {
 
 /* Individual link styling */
 .navlist a {
-  margin: 0 35px;            /* Horizontal spacing between links */
+  margin: 0 20px;  /* reduced horizontal spacing between nav items */
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -84,7 +105,7 @@ header {
 
 /* Primary button styling */
 .btn {
-  padding: 14px 35px;
+  padding: 14px 25px;
   font-size: 14px;
   font-weight: 600;
   color: #000;
@@ -129,6 +150,7 @@ header {
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 1000;
+  backdrop-filter: blur(30px);
 }
 
 /* Style the submenu links */
@@ -139,7 +161,9 @@ header {
   color: #fff;
 }
 .dropdown-menu li a:hover {
-  background: rgba(255,255,255,0.1);
+  background: transparent; /* remove the solid highlight so the blurred backdrop shows through */
+  /* optional: blur the backdrop behind the hovered link */
+  backdrop-filter: blur(10px);
 }
 
 /* Show on desktop hover */

@@ -5,7 +5,7 @@
 /* Reduce header padding on medium-large screens */
 @media (max-width: 1300px) {
   header {
-    padding: 20px 4%;    /* Narrow side padding for smaller viewports */
+    padding: 10px 4%;    /* Narrow side padding for smaller viewports */
   }
 }
 
@@ -58,6 +58,11 @@
 }
 
 @media (max-width: 940px) {
+  header {
+    background: rgba(255, 255, 255,   0.7);
+    backdrop-filter: blur(10px);
+  }
+
   /* make the dropdown part of the document flow */
   .has-dropdown .dropdown-menu {
     position: static;       /* no more absolute overlay */
