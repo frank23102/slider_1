@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastoral Juvenil</title>
+    <link rel="stylesheet" href="/css/stylePJ.css">
+    <link rel="stylesheet" href="/css/components/navbar.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+
+
+</head>
+<body>
+    <!-- Simplified Header with Logo and Navigation -->
+    <header>
+        <!-- Logo and site title -->
+        <a href="#" class="logo">
+            <img src="/assets/image/transparent_logo.png" alt="Site Logo" />
+        </a>
+
+        <ul class="navlist">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/info.html">Info</a></li>
+            <li class="has-dropdown">
+                <!-- the parent “Programas” can just toggle open/closed -->
+                <a href="#" aria-haspopup="true">
+                    Programas <i class="bx bx-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/programas/Maestria.html">Maestría</a></li>
+                    <li><a href="/programas/PastoralJuvenil.html">Pastoral Juvenil</a></li>
+                    <li><a href="/programas/PastoralFamiliar.html">Pastoral Familiar</a></li>
+                    <li><a href="/programas/Cursos.html">Cursos</a></li>
+                </ul>
+            </li>
+            <li><a href="casaderetiro.html">Casa de Retiro</a></li>
+            <li><a href="contactar.html">Contactar</a></li>
+        </ul>
+
+        <!-- Right-side controls: booking button + mobile menu icon -->
+        <div class="nav-right">
+            <a href="#" class="btn">Donar</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="image-overlay-container">
+            <img src="/assets/image/PJ/PJmain.jpg" alt="Pastoral Juvenil" class="about-image">
+            <div class="overlay-text">Pastoral Juvenil</div>
+            <div class="overlay-buttons">
+                <button class="btn btn-white">Más</button>
+                <button class="btn btn-transparent">Unete Ahora</button>
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="section_text_p3">Objetivo</h2>
+            <div class="section_text_p4">
+                <p>
+                    Acompañar y formar a los jóvenes hispanos del Sureste en su camino de fe, promoviendo una formación integral que responda a sus realidades, necesidades e intereses. A través de programas intencionales y espacios de comunión, buscamos:
+                </p>
+                <ul>
+                    <li>Fortalecer su identidad cristiana.</li>
+                    <li>Fomentar el sentido de comunidad y misión.</li>
+                    <li>Capacitarlos para ser discípulos y evangelizadores en su entorno.</li>
+                </ul>
+                <p>
+                    Todo esto, en el marco de la riqueza y diversidad de nuestra Iglesia.
+                    El estudio de Boston College, "Ministry with Young Hispanic Catholics: Towards a Recipe for Success", publicado en 2023, destaca a SEPI como una de las organizaciones más efectivas en los Estados Unidos al servicio de los jóvenes hispanos-latinos.
+                    Uno de los principales valores de SEPI es su capacidad para formar líderes impulsados por la Pascua. Ser líderes pascuales en la Iglesia implica:
+                </p>
+                <ul>
+                    <li>Vivir con esperanza.</li>
+                    <li>Asumir con compromiso la misión.</li>
+                    <li>Ejercer un liderazgo intencional.</li>
+                    <li>Experimentar el poder transformador del Misterio Pascual.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS SECTION with PDF and Video links -->
+    <section id="programs" class="gallery-section">
+        <h1 class="section_text_p3">Programas</h1>
+        <div class="gallery-grid">
+
+            <!-- Card 1: YouLead -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/YouLead.jpg" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">YouLead</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Programa de liderazgo para jóvenes entre 18 y 25 años, que incluye retiro espiritual, misión y formación pastoral.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Segunda semana de junio</div>
+                        <div><span class="icon">📍</span> SEPI, Miami</div>
+                        <div><span class="icon">⏳</span> Duración: 2 años</div>
+                        <div class="program-links">
+                            <a href="YOUR_PDF_LINK_HERE" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Curso de Pastoral Juvenil -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/curso-pastoral.jpg" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">Curso de Pastoral Juvenil</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Formación intensiva para líderes juveniles hispanos, combinando sesiones virtuales y presenciales.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Julio - Septiembre</div>
+                        <div><span class="icon">📍</span> Virtual & Birmingham, AL</div>
+                        <div><span class="icon">⏳</span> 4 días + 4 sesiones virtuales</div>
+                        <div class="program-links">
+                            <a href="YOUR_PDF_LINK_HERE" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Escuela de Asesores Adultos -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/escuela-asesores.jpg" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">Escuela de Asesores Adultos</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Formación integral para asesores adultos en teología, psicología, discernimiento y pastoral juvenil.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Última semana de febrero</div>
+                        <div><span class="icon">📍</span> SEPI, Miami</div>
+                        <div><span class="icon">⏳</span> 3 años consecutivos (una semana por año)</div>
+                        <div class="program-links">
+                            <a href="YOUR_PDF_LINK_HERE" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Proceso del Libro de la Pascua -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/libro-pascua.JPEG" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">Proceso del Libro de la Pascua</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Jóvenes colaboran en un libro basado en el Misterio Pascual, utilizado en Cuaresma para reflexión y evangelización.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Reuniones en mayo, agosto, octubre y enero</div>
+                        <div><span class="icon">📍</span> Regional del Sureste</div>
+                        <div><span class="icon">⏳</span> Anual</div>
+                        <div class="program-links">
+                            <a href="https://drive.google.com/file/d/1gAbFcIwfKsXOfDAUcbrINcAc-4V45Qwk/view?usp=drive_link" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Videos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Encuentro Regional -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/encuentro-regional.jpg" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">Encuentro Regional</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Espacio bilingüe de formación, discernimiento y celebración, culminando con la Copa Católica de Soccer.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Cada dos años</div>
+                        <div><span class="icon">📍</span> Variable (Sureste)</div>
+                        <div><span class="icon">⏳</span> Viernes a domingo</div>
+                        <div class="program-links">
+                            <a href="YOUR_PDF_LINK_HERE" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Escuela de Líderes -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/escuela-lideres.jpg" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">Escuela de Líderes</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Acompañamiento diocesano para fortalecer grupos juveniles con formación y liderazgo local.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Flexible</div>
+                        <div><span class="icon">📍</span> Diócesis participante</div>
+                        <div><span class="icon">⏳</span> 6 meses</div>
+                        <div class="program-links">
+                            <a href="YOUR_PDF_LINK_HERE" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Acompañamiento Parroquial -->
+            <div class="program-card">
+                <div class="program-image-container">
+                    <img src="/assets/image/PJ/rural-ministries.jpg" alt="YouLead" class="program-img">
+                    <div class="program-overlay">
+                        <h3 class="program-title">Acompañamiento Parroquial</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <p class="program-description">
+                        Formación y acompañamiento en parroquias rurales para fortalecer la pastoral juvenil local.
+                    </p>
+                    <div class="program-details">
+                        <div><span class="icon">🗓️</span> Continuo</div>
+                        <div><span class="icon">📍</span> Parroquias rurales del Sureste</div>
+                        <div><span class="icon">⏳</span> Adaptable según comunidad</div>
+                        <div class="program-links">
+                            <a href="YOUR_PDF_LINK_HERE" target="_blank" class="btn-program">Flyer</a>
+                            <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="btn-program">Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="photo-module">
+      <a
+        href="https://heyzine.com/flip-book/05e27e7303.html"
+        target="_blank"
+        rel="noopener"
+        title="Tercer Taller de la Pascua 2023 Orlando, FL Fotógrafo Ricardo Castillo"
+      >
+        <img
+          class="photo-module__img"
+          loading="lazy"
+          decoding="async"
+          src="https://sepi.us/wp-content/uploads/2023/02/Tercer-Taller-de-la-Pascua-2023-Orlando-FL-Fotografo-Ricardo-Castillo.jpg"
+          srcset="
+            https://sepi.us/wp-content/uploads/2023/02/Tercer-Taller-de-la-Pascua-2023-Orlando-FL-Fotografo-Ricardo-Castillo-300x232.jpg 200w,
+            https://sepi.us/wp-content/uploads/2023/02/Tercer-Taller-de-la-Pascua-2023-Orlando-FL-Fotografo-Ricardo-Castillo-768x594.jpg 668w,
+            https://sepi.us/wp-content/uploads/2023/02/Tercer-Taller-de-la-Pascua-2023-Orlando-FL-Fotografo-Ricardo-Castillo-1024x791.jpg 924w,
+            https://sepi.us/wp-content/uploads/2023/02/Tercer-Taller-de-la-Pascua-2023-Orlando-FL-Fotografo-Ricardo-Castillo.jpg 1150w
+          "
+          sizes="(max-width: 1250px) 100vw, 1250px"
+          width="1250"
+          height="966"
+          alt="Flipbook del tercer taller de la pascua"
+        />
+      </a>
+    </div>
+    <!----UPCOMING EVENTS SECTION-------------------->
+    <section id="events" class="event-section">
+        <div class="container">
+            <h1>Próximos eventos</h1>
+            <div class="event">
+                <div class="date-box">
+                    <div class="day">Sabado</div>
+                    <div class="number">24-25</div>
+                    <div class="month-year">Mayo 2025</div>
+                </div>
+                <div class="details">
+                    <div class="title">Libro taller 0</div>
+                    <div class="season">Online</div>
+                    <div class="price">$25</div>
+                </div>
+                <button class="save-btn">Guarda mi lugar</button>
+            </div>
+
+            <div class="event">
+                <div class="date-box">
+                    <div class="day">Domingo</div>
+                    <div class="number">8-14</div>
+                    <div class="month-year">Junio 2025</div>
+                </div>
+                <div class="details">
+                    <div class="title">YouLead</div>
+                    <div class="season">Miami</div>
+                    <div class="price">$500 for southeast</div>
+                </div>
+                <button class="save-btn">Guarda mi lugar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>Copyright &#169;2025 www.sepi.us | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

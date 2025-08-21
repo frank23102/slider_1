@@ -12,9 +12,7 @@
 /* =============================================================================
    BODY
    ============================================================================= */
-body {
-  color: #fff;                /* White text for contrast */
-}
+
 
 /* =============================================================================
    HEADER / NAVIGATION BAR
@@ -37,22 +35,20 @@ body {
          •  45° gradient on right
          • solid fallback in middle
        ============================= */
-    background:
-      /* left fade */
-      linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.7) 43%,
-        rgba(255, 255, 255,   0) 23%
-      )
-      left top / 43% 100% no-repeat,
-  
-      /* right fade */
-      linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0) 43%,
-        rgba(255, 255, 255,   0.7) 23%
-      )
-      right top /39% 100% no-repeat;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(22, 21, 21, 0.55) 50%
+    ) left top / 50% 100% no-repeat,
+    linear-gradient(
+      60deg,
+      rgba(22, 21, 21, 0.55) 50%,
+      rgba(255, 255, 255, 0.7) 50%
+    ) right top / 50% 100% no-repeat;
+
+  /* adds that frosted-glass blur behind the header content */
+  backdrop-filter: blur(12px);
   }
 
 /* Logo styling */
@@ -180,4 +176,8 @@ body {
   opacity: 1 !important;
   visibility: visible !important;
   transform: translateY(0) !important;
+}
+
+header.hide {
+  transform: translateY(-100%);
 }

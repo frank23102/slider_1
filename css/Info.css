@@ -1,0 +1,300 @@
+/* — wrapper — */
+.timeline-section {
+  font-family: 'Jost', sans-serif;
+}
+
+.container {
+  padding: 0px 0px;
+}
+
+.timeline-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* — continuous center line — */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 4px solid black;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  /* background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
+  background-color: black;
+}
+
+/* — each row’s mini-grid — */
+.timeline-block {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  column-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* — the dot, always in column 2 — */
+.timeline-dot {
+  grid-column: 2;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
+  /* border: 2px solid #1f1f1f; */
+  background-color: #fff;
+  border: 4px solid black;
+  margin-top: 0.5rem;
+  z-index: 1;
+}
+
+/* — content cards — */
+.timeline-item {
+  /* background: #1f1f1f; */
+  background-color: #fff;
+
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+;
+}
+/* left side / right side helpers */
+.timeline-item.left  { text-align: right; }
+.timeline-item.right { text-align: left;  }
+
+/* — mobile fallback — */
+@media (max-width: 768px) {
+  /* 1) Make each row a flex row (dot + content) */
+  .timeline-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  /* 2) Shift the vertical line to the left edge */
+  .timeline::before {
+    left: 8px;
+    transform: none;
+  }
+
+  /* 3) Dot always first, positioned on the line */
+  .timeline-dot {
+    order: 0;
+    position: relative;
+    left: 3px;
+    margin: 0;            /* no extra top/bottom gap */
+  }
+
+  /* 4) Content always second, indented from the dot */
+  .timeline-item {
+    order: 1;
+    margin: 0 0 0 16px;   /* space from the dot */
+    text-align: left !important;
+  }
+
+  /* 5) Remove any empty placeholders */
+  .timeline-item.empty {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-dot {
+    width: 35px;
+    height: 15px;
+    /* if you want to keep it perfectly circular: */
+    border-radius: 50%;
+  }
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  margin: auto;
+}
+h2 {
+  color: black;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 36px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  padding: 5px 0;
+  color: black;
+}
+.link-section a {
+  text-decoration: none;
+  color: #006699;
+  transition: color 0.3s;
+}
+.link-section a:hover {
+  color: #004466;
+}
+.contact-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+}
+.bio-link {
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: white;
+}
+.bio-link:hover {
+  color: #555;
+}
+
+
+/* Colaboradores section headings */
+#colaboradores h3 {
+  font-size: 1.25rem;             /* a bit smaller than your h2 */
+  font-weight: 600;               /* semibold for emphasis */
+  color: black;                 /* match your timeline accent blue */
+  text-transform: uppercase;      /* makes them stand out */
+  margin: 1rem 0 0rem;            /* space above & below */
+  position: relative;             /* for the ::after line */
+}
+
+/* container for the two boards */
+.boards {
+  display: flex;
+  flex-wrap: wrap;             /* wraps on small screens */
+  gap: 2rem;                   /* space between columns */
+  margin: 2rem 0;              /* vertical spacing */
+  padding: 100px;
+}
+
+/* each column takes roughly half the width */
+.boards section {
+  flex: 1 1 45%;               /* grow, shrink, basis */
+  min-width: 280px;            /* avoid too-narrow columns */
+}
+
+/* override your global centered h2 */
+.boards section h2 {
+  text-align: left;            /* left-align each title */
+  font-size: 1.75rem;          /* adjust if you like */
+  margin-bottom: 1rem;
+}
+
+/* tidy up the lists */
+.boards section ul {
+  list-style: disc inside;     /* or use none + custom bullets */
+  color: #333;
+  line-height: 1.5;
+}
+
+.image-row {
+  display: flex;
+  gap: 10px;               /* space between images */
+  justify-content: center; /* or flex-start / flex-end as you like */
+  align-items: center;
+}
+
+.image-row img {
+  flex: 1;
+  max-width: 500px;
+  height: auto;
+}
+
+#colaboradores ul {
+  list-style: none;
+  padding: 0;
+}
+
+#colaboradores li {
+  margin-bottom: 0.5em;
+}
+
+#colaboradores a {
+  color: #0056b3;
+  text-decoration: none;
+  border-bottom: 1px dotted #0056b3;
+}
+
+#colaboradores a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+
+
+/* — Home / Hero Section — */
+#home {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* background image fills container */
+#home .background-image,
+#home .background-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#home .background-image img {
+  object-fit: cover;
+}
+
+/* dark overlay to improve text contrast */
+#home .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* center-aligned hero text */
+#home .hero-text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* title & subtitle animations */
+.hero-title {
+  font-size: 3rem;
+  margin: 0.2em 0;
+  animation: fadeInDown 1s ease-out forwards;
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 0.2em 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

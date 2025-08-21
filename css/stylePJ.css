@@ -1,0 +1,394 @@
+/* --------------------------------------------------WHOLE PAGE--------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section_text_p3 {
+  color: black; /* Ensure the text contrasts against the background */
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 2rem 0; /* Add some spacing between the lines */
+  font-family: serif; /* Apply a generic serif typeface */
+}
+
+/* Centered and compressed text block */
+.section_text_p4 {
+  color: black;
+  font-size: 1rem;
+  text-align:justify;
+  font-weight: 100;
+  margin: 1.2rem auto; /* Center the text block */
+  font-family: serif;
+  max-width: 1200px; /* Limit the width of the text block */
+  padding: 0 10rem; /* Add padding inside the text block */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+
+.help-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding:8px 16px;
+  border-radius:20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.contact-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+
+/*--------------------------------------------------ABOUT SECTION--------------------------------------------------*/
+#about {
+  background-color: rgb(225, 237, 239);
+}
+
+.about-section {
+    align-items: center;
+}
+
+.image-overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-overlay-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);  /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.overlay-text {
+    font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 2;  /* Ensure the overlay text stays above the tint */
+}
+
+.overlay-buttons {
+    position: absolute;
+    top: calc(50% + 60px); /* Adjust vertical spacing as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 3; /* Ensure buttons appear above the tint and image */
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-white:hover {
+  background-color: rgba(248, 245, 245, 0.5);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Add an overlay effect when clicking the buttons */
+.btn-white:active,
+.btn-transparent:active {
+    opacity: 0.8;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 8px 16px;
+  width: 8rem;
+  border-radius: 20px;
+}
+
+.btn-color-1
+{
+  border: rgb(255, 255, 255) 0.1rem solid; /* Set button border to white */
+}
+
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+
+
+.about-content {
+    padding: 20px;
+}
+
+.about-content ul {
+    margin-left: 10px;
+}
+
+
+/*--------------------------------------------------PROGRAM SECTION--------------------------------------------------*/
+
+#programs {
+  background: linear-gradient(white, rgb(225, 237, 239));
+}
+.section_title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+  
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 6rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+  
+.program-card {
+    background-color: black;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+  
+.program-card:hover {
+    transform: translateY(-5px);
+}
+  
+.program-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* NEW: Wrap the image in a container for positioning the overlay */
+.program-image-container {
+    position: relative;
+}
+
+/* NEW: Create a gradient overlay on the top of the image to darken it */
+.program-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Gradient from opaque black at top to transparent */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;  /* Center the title */
+}
+
+/* NEW: Style the program title to appear within the overlay */
+.program-title {
+    margin: 0;
+    color: white;  /* White text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Shadow to pop out the text */
+}
+
+/* NEW: Style the information section below the image */
+.program-content {
+  padding: 1rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0 0 12px 12px;
+  color: white;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+
+/* Optional: Style for details and description text */
+.program-description {
+font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.program-details {
+    font-size: 0.9rem;
+    display: grid;
+    gap: 0.3rem;
+}
+
+.program-image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;  /* Adjust this value as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    pointer-events: none;
+    z-index: 2;  /* Make sure it's above the image but below text */
+}
+
+/* New button style for program Flyer and Videos */
+.btn-program {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+/*--------------------------------------------------UPCOMING EVENT SECTION--------------------------------------------------*/
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.category {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #111827;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e0e0e0;
+  padding: 20px 0;
+}
+
+.date-box {
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.date-box .day,
+.date-box .month-year {
+  font-size: 14px;
+  color: #555;
+}
+
+.date-box .number {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.details {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.season, .price {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.save-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* CSS */
+.photo-module {
+  /* center the module in its container */
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.photo-module__img {
+  /* make it responsive */
+  max-width: 40%;
+  height: auto;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform .2s ease-in-out;
+}
+
+.photo-module__img:hover {
+  transform: scale(1.02);
+}

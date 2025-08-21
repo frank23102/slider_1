@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Ensure proper mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>Document</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Component styles -->
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/carousel.css" />
+    <!-- Mobile-specific overrides -->
+    <link rel="stylesheet" href="css/Info.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+
+    <!-- Icon library (Boxicons) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- Google Fonts preconnect and import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============================ HEADER / NAVIGATION BAR ============================ -->
+    <header>
+      <!-- Logo and site title -->
+      <a href="#" class="logo">
+        <img src="assets/image/transparent_logo.png" alt="Site Logo" />
+      </a>
+
+      <ul class="navlist">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="info.html">Info</a></li>
+  <li class="has-dropdown">
+    <!-- the parent “Programas” can just toggle open/closed -->
+    <a href="#" aria-haspopup="true">
+      Programas <i class="bx bx-chevron-down"></i>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="programas/Maestria.html">Maestría</a></li>
+      <li><a href="programas/PastoralJuvenil.html">Pastoral Juvenil</a></li>
+      <li><a href="programas/PastoralFamiliar.html">Pastoral Familiar</a></li>
+      <li><a href="programas/Cursos.html">Cursos</a></li>
+    </ul>
+  </li>
+  <li><a href="casaderetiro.html">Casa de Retiro</a></li>
+  <li><a href="contactar.html">Contactar</a></li>
+      </ul>
+
+      <!-- Right-side controls: booking button + mobile menu icon -->
+      <div class="nav-right">
+        <a href="#" class="btn">Donar</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="background-image">
+        <img src="./assets/image/info.png" alt="background-image" />
+      </div>
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h1 class="hero-title">SEPI</h1>
+        <p class="hero-subtitle">South East Pastoral Instititute</p>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <div class="container">
+        <h2>Nuestra Historia</h2>
+        <div class="timeline">
+          <div class="timeline-block">
+            <div class="timeline-item left">
+              <h3>1978</h3>
+              <p>
+                Creación de la Oficina Regional de los Obispos del Sureste para el
+                Ministerio Hispano.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-item right">
+              <h3>1979</h3>
+              <p>
+                Nacimiento del SEPI como rama educativa en respuesta al II Encuentro
+                Nacional Hispano de Pastoral.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="timeline-item left">
+              <h3>1980s–1990s</h3>
+              <p>
+                Más de 600 comunidades hispanas establecidas y más de 5 millones de
+                millas recorridas en misión evangelizadora.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="timeline-dot"></div>
+            <div class="timeline-item right">
+              <h3>2000s</h3>
+              <p>
+                Publicación de 63 boletines “Sureste” y distribución de 273,000 libros
+                y recursos pastorales.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="timeline-item left">
+              <h3>Actualidad</h3>
+              <p>
+                Formación de más de 1,800 líderes, 78 graduados de Maestría, y
+                presencia activa en 30 diócesis.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="image-row">
+      <img
+        src="assets/image/Mapa-de-Provincias.jpg"
+        alt="Description of image 1"
+      />
+      <img src="assets/image/Mapa-Regional.jpg" alt="Description of image 2" />
+    </div>
+
+    <div class="boards">
+      <section id="board-of-trustees">
+        <h2>Board of Trustees</h2>
+        <ul>
+          <li>Most Rev. Thomas Wenski – Archdiocese of Miami (Chairperson)</li>
+          <li>Most Rev. Gregory Aymond – Archdiocese of New Orleans (Vice-Chairperson)</li>
+          <li>Most Rev. Thomas J. Rodi – Archdiocese of Mobile (Treasurer)</li>
+          <li>Most Rev. Shelton J. Fabre – Archdiocese of Louisville</li>
+          <li>
+            Most Rev. Gregory John Hartmayer, OFM Conv. – Archdiocese of Atlanta
+          </li>
+          <li>Most Rev. Robert Marshall – Diocese of Alexandria</li>
+          <li>Most Rev. Michael G. Duca – Diocese of Baton Rouge</li>
+          <li>Most Rev. Louis F. Kihneman III – Diocese of Biloxi</li>
+          <li>Most Rev. Steven J. Raica – Diocese of Birmingham</li>
+          <li>Most Rev. Jacques Fabre-Jeune – Diocese of Charleston</li>
+          <li>Most Rev. Michael Martin, OFM Conv. – Diocese of Charlotte</li>
+          <li>Most Rev. John C. Iffert – Diocese of Covington</li>
+          <li>Most Rev. Joseph R. Kopacz – Diocese of Jackson</li>
+          <li>Most Rev. Mark Beckman – Diocese of Knoxville</li>
+          <li>Most Rev. J. Douglas Deshotel – Diocese of Lafayette</li>
+          <li>Most Rev. Glen John Provost – Diocese of Lake Charles</li>
+          <li>Most Rev. John Stowe, OFM Conv. – Diocese of Lexington</li>
+          <li>
+            Fr. Simon Peter Engurait – Diocesan Administrator, Diocese of Houma-Thibodaux
+          </li>
+          <li>Most Rev. David P. Talley – Diocese of Memphis</li>
+          <li>Most Rev. Mark Spalding – Diocese of Nashville</li>
+          <li>Most Rev. John Noonan – Diocese of Orlando</li>
+          <li>Most Rev. William F. Medley – Diocese of Owensboro</li>
+          <li>Most Rev. Gerald M. Barbarito – Diocese of Palm Beach</li>
+          <li>Most Rev. William A. Wack, CSC – Diocese of Pensacola-Tallahassee</li>
+          <li>Most Rev. Luis Rafael Zarama – Diocese of Raleigh</li>
+          <li>Most Rev. Stephen D. Parkes – Diocese of Savannah</li>
+          <li>Most Rev. Francis Malone – Diocese of Shreveport</li>
+          <li>Most Rev. Erik T. Pohlmeier – Diocese of Saint Augustine</li>
+          <li>Most Rev. Gregory L. Parkes – Diocese of Saint Petersburg</li>
+          <li>Most Rev. Frank J. Dewane – Diocese of Venice</li>
+        </ul>
+      </section>
+
+      <section id="board-of-directors" class="link-section">
+        <h2>Board of Directors</h2>
+        <ul>
+          <li>
+            Most Rev. Erik T. Pohlmeier – Diocese of Saint Augustine
+            <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Most Rev. Louis F. Kihneman III – Diocese of Biloxi
+            <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Joseph Boland <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Rev. Victor Ingalls, STB, MA <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Rev. Alejandro López Cardinale
+            <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Christina Lamas <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Dcn. Juan Carlos Pagán
+            <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Eva Gonzalez <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Fernando Gomez <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+          <li>
+            Peter J. Ductrám <a href="#" class="bio-link">Ver Biografía</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="colaboradores" style="padding-left: 100px;"> 
+      <h2>¿Con Quién Colaboramos?</h2>
+
+      <h3>Nuestros Colegas en Pastoral Hispano Nacional</h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.usccb.org/committees/cultural-diversity-church"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            USCCB Secretariat For Cultural Diversity In The Church
+          </a>
+        </li>
+        <li>
+          <a href="https://www.laredpjh.org/" target="_blank" rel="noopener noreferrer">
+            National Catholic Network De Pastoral Juvenil Hispana (La RED)
+          </a>
+        </li>
+        <li>
+          <a href="https://ncaddhm-usa.org/" target="_blank" rel="noopener noreferrer">
+            National Catholic Association Of Diocesan Directors For Hispanic Ministry (NCADDHM)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fip-usa.com/" target="_blank" rel="noopener noreferrer">
+            Federación De Institutos Pastorales (FIP)
+          </a>
+        </li>
+        <li>
+          <a href="https://ncchm-us.org/" target="_blank" rel="noopener noreferrer">
+            National Catholic Council For Hispanic Ministry, Inc. (NCCHM)
+          </a>
+        </li>
+        <li>
+          <a href="https://cmfwn.org/" target="_blank" rel="noopener noreferrer">
+            La Red Católica Del Campesino Migrante (CMFN)
+          </a>
+        </li>
+      </ul>
+
+      <h3>Instituciones en Consorcio con el SEPI para Programas de Formación</h3>
+      <ul>
+        <li>
+          <a href="https://www.barry.edu" target="_blank" rel="noopener noreferrer">
+            Barry University
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nd.edu" target="_blank" rel="noopener noreferrer">
+            University Of Notre Dame
+          </a>
+        </li>
+      </ul>
+
+      <h3>Otros Colaboradores y Recursos de Pastoral Hispana</h3>
+      <ul>
+        <li>
+          <a href="https://achtus.us/" target="_blank" rel="noopener noreferrer">
+            Academy Of Catholic Hispanic Theologians Of The United States (ACHTUS)
+          </a>
+        </li>
+        <li>Asociación De Religiosas Hispanas En Estados Unidos (ARHEU)</li>
+        <li>
+          <a href="https://ansh.org/index.php" target="_blank" rel="noopener noreferrer">
+            Asociación Nacional De Sacerdotes Hispanos (ANSH)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.crsespanol.org/" target="_blank" rel="noopener noreferrer">
+            Catholic Relief Services – MAS INFO
+          </a>
+        </li>
+        <li>
+          <a href="https://feyvida.org/" target="_blank" rel="noopener noreferrer">
+            Instituto Fe Y Vida
+          </a>
+        </li>
+        <li>Hispanic Ministry Resource Center</li>
+        <li>
+          <a href="https://cmfwn.org/" target="_blank" rel="noopener noreferrer">
+            La Red Católica Del Campesino Migrante (CMFN)
+          </a>
+        </li>
+        <li>National Association Of Catholic Family Life Ministers (NACFLM)</li>
+        <li>
+          <a href="https://www.portumatrimonio.org/" target="_blank" rel="noopener noreferrer">
+            Por Tu Matrimonio
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ushispanicministry.com/" target="_blank" rel="noopener noreferrer">
+            U.S. Hispanic Ministry
+          </a>
+        </li>
+        <li>
+          <a href="https://www.call-usa.org/" target="_blank" rel="noopener noreferrer">
+            Catholic Association Of Latino Leaders (CALL)
+          </a>
+        </li>
+        <li>
+          <a href="https://andhusa.org/" target="_blank" rel="noopener noreferrer">
+            Asociación Nacional De Diáconos Hispanos
+          </a>
+        </li>
+        <li>
+          <a href="https://catholicclimatecovenant.org/spanish/" target="_blank" rel="noopener noreferrer">
+            Alianza Católica Por El Clima
+          </a>
+        </li>
+        <li>Asociación Nacional De Diáconos Hispanos (ANDH)</li>
+        <li>
+          <a href="https://cara.georgetown.edu/" target="_blank" rel="noopener noreferrer">
+            Center For Applied Research In The Apostolate (CARA)
+          </a>
+        </li>
+        <li>
+          <a href="https://cmdnet.org/" target="_blank" rel="noopener noreferrer">
+            Center For Ministry Development
+          </a>
+        </li>
+        <li>
+          Federation For Catechesis With Hispanics, National Conferences For
+          Catechetical Leadership (NCCL)
+        </li>
+        <li>Instituto Nacional Hispano De Liturgia (INHL)</li>
+        <li>
+          <a href="https://maccsa.org/en/" target="_blank" rel="noopener noreferrer">
+            Mexican American Catholic College (MACC)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.renewintl.org/" target="_blank" rel="noopener noreferrer">
+            RENEW Proyecto América Latina
+          </a>
+        </li>
+        <li>
+          <a href="https://fundacionpane.org/" target="_blank" rel="noopener noreferrer">
+            Fundación Ramón Pané, Inc.
+          </a>
+        </li>
+        <li>The Pontifical Mission Societies</li>
+      </ul>
+    </section>
+
+    <div class="contact-info">
+      <p>
+        Si desea recibir más información puede contactarnos llamando al teléfono
+        <strong>(305) 279-2333</strong> o vía correo electrónico a
+        <strong><a href="mailto:info@sepi.us">info@sepi.us</a></strong>.
+      </p>
+    </div>
+  <footer class="footer-section">
+    <div class="footer-container">
+      <h3 class="footer-title">Stay connected with us:</h3>
+      <div class="social-icons">
+        <a href="#" class="icon facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="icon instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#" class="icon twitter"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

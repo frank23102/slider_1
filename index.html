@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/components/carousel.css" />
     <!-- Mobile-specific overrides -->
   <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+
 
   <!-- Icon library (Boxicons) -->
   <link
@@ -36,36 +38,33 @@
   />
 </head>
 <body>
-  <!-- ============================
-       HEADER / NAVIGATION BAR
-       ============================ -->
+  <!-- ============================ HEADER / NAVIGATION BAR ============================ -->
   <header>
     <!-- Logo and site title -->
     <a href="#" class="logo">
       <img src="assets/image/transparent_logo.png" alt="Site Logo" />
     </a>
 
+    <!-- Primary navigation links -->
     <ul class="navlist">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="info.html">Info</a></li>
-      <!-- Add this dropdown wrapper -->
       <li class="has-dropdown">
-        <a>
+        <!-- the parent “Programas” can just toggle open/closed -->
+        <a href="#" aria-haspopup="true">
           Programas <i class="bx bx-chevron-down"></i>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#Maestria">Maestria</a></li>
-          <li><a href="#PastoralJuvenil">Pastoral Juvenil</a></li>
-          <li><a href="#PastoralFamiliar">Pastoral Familiar</a></li>
-          <li><a href="#Cursos">Cursos</a></li>
+          <li><a href="programas/Maestria.html">Maestría</a></li>
+          <li><a href="/Programas/PastoralJuvenil.html">Pastoral Juvenil</a></li>
+          <li><a href="programas/PastoralFamiliar.html">Pastoral Familiar</a></li>
+          <li><a href="programas/Cursos.html">Cursos</a></li>
         </ul>
       </li>
       <li><a href="casaderetiro.html">Casa de Retiro</a></li>
       <li><a href="contactar.html">Contactar</a></li>
     </ul>
-
-    <!-- Primary navigation links -->
-     
+    
 
     <!-- Right-side controls: booking button + mobile menu icon -->
     <div class="nav-right">
@@ -74,142 +73,217 @@
       <div class="bx bx-menu" id="menu-icon"></div>
     </div>
   </header>
-  <!-- ============================
-       CAROUSEL COMPONENT
-       ============================ -->
-  <div class="carousel">
-    <!-- Slides list -->
-    <div class="list">
-      <!-- Each slide item -->
-      <div class="item">
-        <!-- Slide image -->
-        <img src="assets/image/img1.jpeg" alt="Slide 1" />
-        <!-- Overlay content for slide -->
-        <div class="content">
-          <div class="author">LUNDEV</div>
-          <div class="title">DESIGN SLIDER</div>
-          <div class="topic">ANIMAL</div>
-          <div class="des">
-            <!-- Description text -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi,
-            rem magnam nesciunt minima placeat, itaque eum neque officiis unde,
-            eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut
-            doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora
-            at laborum natus unde. Ut, exercitationem eum aperiam illo illum
-            laudantium?
-          </div>
-          <div class="buttons">
-            <button>SEE MORE</button>
-            <button>SUBSCRIBE</button>
-          </div>
+  <!-- ============================ CAROUSEL COMPONENT ============================ -->
+<div class="carousel">
+  <!-- Slides list -->
+  <div class="list">
+    <!-- Slide 1: Who We Are -->
+    <div class="item">
+      <img src="assets/image/img1.jpeg" alt="Slide 1" />
+      <div class="content">
+        <div class="author">Misión y Visión</div>
+        <div class="title">SEPI</div>
+        <div class="topic">Nuestra Identidad</div>
+        <div class="des">
+          SEPI es el Instituto Pastoral del Sudeste de los Estados Unidos. Proveemos programas de formación, evangelización y desarrollo de liderazgo para ministros laicos y jóvenes hispanos.
         </div>
-      </div>
-
-      <!-- Repeat .item for each additional slide -->
-      <div class="item">
-        <img src="assets/image/img2.jpeg" alt="Slide 2" />
-        <div class="content">
-          <div class="author">LUNDEV</div>
-          <div class="title">DESIGN SLIDER</div>
-          <div class="topic">FORMACION</div>
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi,
-            rem magnam nesciunt minima placeat...
-          </div>
-          <div class="buttons">
-            <button>SEE MORE</button>
-            <button>SUBSCRIBE</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="item">
-        <img src="assets/image/img3.jpeg" alt="Slide 3" />
-        <div class="content">
-          <div class="author">LUNDEV</div>
-          <div class="title">DESIGN SLIDER</div>
-          <div class="topic">EVANGELIZACIÓN</div>
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi...
-          </div>
-          <div class="buttons">
-            <button>SEE MORE</button>
-            <button>SUBSCRIBE</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 4 -->
-      <div class="item">
-        <img src="assets/image/img4.jpeg" alt="Slide 4" />
-        <div class="content">
-          <div class="author">LUNDEV</div>
-          <div class="title">DESIGN SLIDER</div>
-          <div class="topic">COMUNIÓN</div>
-          <div class="des">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi...
-          </div>
-          <div class="buttons">
-            <button>SEE MORE</button>
-            <button>SUBSCRIBE</button>
-          </div>
+        <div class="buttons">
+          <button>LEARN MORE</button>
+          <button>JOIN US</button>
         </div>
       </div>
     </div>
 
-    <!-- ============================
-         THUMBNAIL NAVIGATION
-         ============================ -->
-    <div class="thumbnail">
-      <!-- Thumbnail item -->
-      <div class="item">
-        <img src="assets/image/img1.jpeg" alt="Thumbnail 1" />
-        <div class="content">
-          <div class="title">SEPI</div>
-          <div class="description">Description</div>
+    <!-- Slide 2: Formación -->
+    <div class="item">
+      <img src="assets/image/img2.jpeg" alt="Slide 2" />
+      <div class="content">
+        <div class="author">SEPI</div>
+        <div class="title">Formación</div>
+        <div class="topic">Liderazgo y Fe</div>
+        <div class="des">
+          Creamos oportunidades educativas que fortalecen la fe católica y desarrollan el liderazgo de ministros laicos y jóvenes en nuestras comunidades hispanas.
         </div>
-      </div>
-      <!-- Repeat for other thumbnails -->
-      <div class="item">
-        <img src="assets/image/img2.jpeg" alt="Thumbnail 2" />
-        <div class="content">
-          <div class="title">FORMACIÓN</div>
-          <div class="description">Description</div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="assets/image/img3.jpeg" alt="Thumbnail 3" />
-        <div class="content">
-          <div class="title">EVANGELIZACIÓN</div>
-          <div class="description">Description</div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="assets/image/img4.jpeg" alt="Thumbnail 4" />
-        <div class="content">
-          <div class="title">COMUNIÓN</div>
-          <div class="description">Description</div>
+        <div class="buttons">
+          <button>LEARN MORE</button>
+          <button>JOIN US</button>
         </div>
       </div>
     </div>
 
-    <!-- ============================
-         CONTROLS: PREV/NEXT BUTTONS
-         ============================ -->
-    <div class="arrows">
-      <button id="prev">&lt;</button>
-      <button id="next">&gt;</button>
+    <!-- Slide 3: Evangelización -->
+    <div class="item">
+      <img src="assets/image/evangelizacion.jpg" alt="Slide 3" />
+      <div class="content">
+        <div class="author">SEPI</div>
+        <div class="title">Evangelización</div>
+        <div class="topic">Discipulado Misionero</div>
+        <div class="des">
+          Anunciamos el Evangelio con pasión y compromiso, formando discípulos misioneros que viven su fe con autenticidad y servicio en la Iglesia.
+        </div>
+        <div class="buttons">
+          <button>LEARN MORE</button>
+          <button>JOIN US</button>
+        </div>
+      </div>
     </div>
 
-    <!-- ============================
-         AUTO-ADVANCE TIMER DISPLAY
-         ============================ -->
-    <div class="time"></div>
+    <!-- Slide 4: Comunión -->
+    <div class="item">
+      <img src="assets/image/img4.jpeg" alt="Slide 4" />
+      <div class="content">
+        <div class="author">SEPI</div>
+        <div class="title">Comunión</div>
+        <div class="topic">Unidad y Cultura</div>
+        <div class="des">
+          Fomentamos la comunión eclesial y cultural, creando espacios donde los hispanos se sienten parte activa y acogida de la Iglesia católica en los Estados Unidos.
+        </div>
+        <div class="buttons">
+          <button>LEARN MORE</button>
+          <button>JOIN US</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  
+  <!-- Thumbnail Navigation -->
+  <div class="thumbnail">
+    <div class="item">
+      <img src="assets/image/img1.jpeg" alt="Thumbnail 1" />
+      <div class="content">
+        <div class="title">SEPI</div>
+        <div class="description">Misión y Visón</div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="assets/image/img2.jpeg" alt="Thumbnail 2" />
+      <div class="content">
+        <div class="title">FORMACIÓN</div>
+        <div class="description">Liderazgo y Fe</div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="assets/image/evangelizacion.jpg" alt="Thumbnail 3" />
+      <div class="content">
+        <div class="title">EVANGELIZACIÓN</div>
+        <div class="description">Discipulado</div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="assets/image/img4.jpeg" alt="Thumbnail 4" />
+      <div class="content">
+        <div class="title">COMUNIÓN</div>
+        <div class="description">Unidad y Cultura</div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Navigation Buttons -->
+  <div class="arrows">
+    <button id="prev">&lt;</button>
+    <button id="next">&gt;</button>
+  </div>
+
+  <!-- Timer Display -->
+  <div class="time"></div>
+</div>
+
+
+  <section id="about-us">
+    <div class="about-container">
+      <div class="about-description">
+        <h1>Acerca de Nosotros</h1>
+        <p>
+          SEPI es una organización sin fines de lucro comprometida con el empoderamiento de comunidades a través de programas de innovación sostenible, investigación social y acción transformadora. Nuestra misión es generar un impacto real en la vida de las personas, promoviendo la equidad, la educación y el desarrollo integral. Con un enfoque holístico, trabajamos en iniciativas que combinan tecnología, cultura y compromiso social para construir un futuro más justo y sustentable.
+        </p>
+      </div>
+      <div class="about-video">
+        <!-- Update "TU_LINK_AQUI" with your video link -->
+        <iframe src="assets/videos/SummerSEPI.mp4" title="Video de SEPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================OUR PROGRAMS SECTION START ============================ -->
+  <section id="our-programs" class="programs-section">
+    <div class="container">
+      <h2>Nuestros Programas</h2>
+      <div class="programs-list">
+        <!-- Maestría -->
+        <div class="program-card">
+          <div class="program-img" style="background-image: url('assets/image/maestria.png');"></div>
+          <h3>Maestría y Cursos</h3>
+          <a href="#" class="program-btn">Más información →</a>
+        </div>
+
+        <!-- Pastoral Juvenil -->
+        <div class="program-card">
+          <div class="program-img" style="background-image: url('assets/image/PJmain.jpg');"></div>
+          <h3>Pastoral Juvenil</h3>
+          <a href="#" class="program-btn">Más información →</a>
+        </div>
+
+        <!-- Pastoral Familiar -->
+        <div class="program-card">
+          <div class="program-img" style="background-image: url('assets/image/pastoralfamiliar.jpg');"></div>
+          <h3>Pastoral Familiar</h3>
+          <a href="#" class="program-btn">Más información →</a>
+        </div>
+
+        <!-- Cursos -->
+        <div class="program-card">
+          <div class="program-img" style="background-image: url('assets/image/protectionkids.webp');"></div>
+          <h3>Oración y Alabanza para Niños</h3>
+          <a href="#" class="program-btn">Más información →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ============================Upcoming Events Section ============================ -->
+  <section id="events" class="event-section">
+    <div class="container">
+      <h2>Próximos eventos</h2>
+      <div class="event">
+        <div class="date-box">
+          <div class="day">Sabado</div>
+          <div class="number">24-25</div>
+          <div class="month-year">Mayo 2025</div>
+        </div>
+        <div class="details">
+          <div class="eventname">Libro taller 0</div>
+          <div class="season">Online</div>
+          <div class="price">$25</div>
+        </div>
+        <button class="save-btn">Guarda mi lugar</button>
+      </div>
+      <div class="event">
+        <div class="date-box">
+          <div class="day">Domingo</div>
+          <div class="number">8-14</div>
+          <div class="month-year">Junio 2025</div>
+        </div>
+        <div class="details">
+          <div class="eventname">YouLead</div>
+          <div class="season">Miami</div>
+          <div class="price">$500 for southeast</div>
+        </div>
+        <button class="save-btn">Guarda mi lugar</button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      <h3 class="footer-title">Stay connected with us:</h3>
+      <div class="social-icons">
+        <a href="#" class="icon facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#" class="icon instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+        <a href="#" class="icon twitter"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
   <!-- ============================
        EXTERNAL SCRIPT FILES
        ============================ -->
