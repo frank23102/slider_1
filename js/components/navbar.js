@@ -33,8 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let lastScrollTop = 0;
 const header = document.querySelector("header");
+let ticking = false;
 
-window.addEventListener("scroll", function () {
+function updateHeaderVisibility() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
@@ -46,4 +47,12 @@ window.addEventListener("scroll", function () {
     }
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Avoid negative values
+    ticking = false;
+}
+
+window.addEventListener("scroll", function () {
+    if (!ticking) {
+        window.requestAnimationFrame(updateHeaderVisibility);
+        ticking = true;
+    }
 });
