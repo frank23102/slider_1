@@ -4,8 +4,9 @@ let prevDom = document.getElementById('prev');
 
 let carouselDom = document.querySelector('.carousel');
 let SliderDom = carouselDom.querySelector('.carousel .list');
+let SliderItemsDom = SliderDom.children;
 let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let thumbnailItemsDom = thumbnailBorderDom.children;
 let timeDom = document.querySelector('.carousel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
@@ -24,9 +25,6 @@ let runNextAuto = setTimeout(() => {
     next.click();
 }, timeAutoNext)
 function showSlider(type){
-    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
-    
     if(type === 'next'){
         SliderDom.appendChild(SliderItemsDom[0]);
         thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
